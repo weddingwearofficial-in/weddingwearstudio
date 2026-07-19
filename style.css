@@ -84,3 +84,31 @@ nav a{
 .card p{
     margin-bottom:20px;
 }
+.hero{
+    background: url("fb5.jpg") center center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero h1,
+.hero p,
+.hero .btn{
+    position:relative;
+    z-index:2;
+    color:white;
+}
