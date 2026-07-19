@@ -1,138 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding Wear Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Wear Studio</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f8f8f8;
-}
-
-header{
-    background:#7b112c;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-header h1{
-    font-size:40px;
-}
-
-header p{
-    margin-top:10px;
-}
-
-.container{
-    width:90%;
-    margin:30px auto;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card img{
-    width:100%;
-    height:380px;
-    object-fit:cover;
-}
-
-.card h3{
-    padding:15px;
-    text-align:center;
-}
-
-.btn{
-    display:block;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    text-align:center;
-    padding:15px;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#128C7E;
-}
-
-footer{
-    margin-top:40px;
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Wedding Wear Studio</h1>
-<p>Premium Wedding Wear Collection</p>
+<header class="header">
+  <div class="logo">Wedding Wear Studio</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Bridal</a>
+    <a href="#">Sarees</a>
+    <a href="#">Party Wear</a>
+  </nav>
 </header>
 
-<div class="container">
+<section class="hero">
+  <h1>Premium Wedding Collection</h1>
+  <p>Discover Beautiful Bridal & Designer Wear</p>
 
-<div class="products">
+  <a class="btn" href="https://wa.me/918238193632">
+    Contact on WhatsApp
+  </a>
+</section>
 
-<div class="card">
-<img src="https://via.placeholder.com/400x500?text=Bridal+Lehenga">
-<h3>Bridal Lehenga WL001</h3>
-<a class="btn" href="https://wa.me/918238193632?text=Hi%20Wedding%20Wear%20Studio,%20I%20am%20interested%20in%20Product%20WL001" target="_blank">
-Enquire on WhatsApp
-</a>
-</div>
+<section class="products">
 
-<div class="card">
-<img src="https://via.placeholder.com/400x500?text=Party+Wear">
-<h3>Party Wear WL002</h3>
-<a class="btn" href="https://wa.me/918238193632?text=Hi%20Wedding%20Wear%20Studio,%20I%20am%20interested%20in%20Product%20WL002" target="_blank">
-Enquire on WhatsApp
-</a>
-</div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x400" alt="Product">
+    <h3>Bridal Lehenga</h3>
+    <p>Code: BR101</p>
+  </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/400x500?text=Saree">
-<h3>Designer Saree WL003</h3>
-<a class="btn" href="https://wa.me/918238193632?text=Hi%20Wedding%20Wear%20Studio,%20I%20am%20interested%20in%20Product%20WL003" target="_blank">
-Enquire on WhatsApp
-</a>
-</div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x400" alt="Product">
+    <h3>Designer Saree</h3>
+    <p>Code: SR102</p>
+  </div>
 
-</div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x400" alt="Product">
+    <h3>Party Wear Gown</h3>
+    <p>Code: PW103</p>
+  </div>
 
-</div>
+</section>
 
-<footer>
-© 2026 Wedding Wear Studio | All Rights Reserved
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
